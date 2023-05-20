@@ -1,11 +1,11 @@
 n=int(input())
-sum=0
-sqrt=n*n
-while sqrt>0:
-    digit=sqrt%10
-    sum=sum+digit
-    sqrt=sqrt//10
-if(sum==n):
+s=0
+sq=n**2
+while sq>0:
+    r=sq%10
+    s=s+r
+    sq=sq//10
+if n==s:
     print("Neon Number")
 else:
     print("Not Neon Number")
