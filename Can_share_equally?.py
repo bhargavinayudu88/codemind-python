@@ -1,12 +1,5 @@
-a,b=map(int,input().split())
-s=a*1
-s1=b*2
-if(b%2!=0 and a==0):
-    print("NO")
+x,y=map(int,input().split())
+if(x%2==0 and(x>0 or y%2==0)):
+    print('YES')
 else:
-    if((s+s1)%2==0):
-        print("YES")
-    else:
-        print("NO")
-        
-        
+    print('NO')
