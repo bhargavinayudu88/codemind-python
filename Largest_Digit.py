@@ -1,8 +1,7 @@
 n=int(input())
-l=0
-while n:
+b=[]
+while n!=0:
     r=n%10
+    b.append(r)
     n=n//10
-    if l<r:
-        l=r
-print(l)
+print(max(b))
