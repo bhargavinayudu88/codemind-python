@@ -1,12 +1,20 @@
-n=int(input())
-def fun(n):
+def add(a):
     s=0
-    while n:
-        r=n%10
-        s=s+r
-        n=n//10
-    return s
-while n>10:
-    n=fun(n)
-print(n)
-    
+    temp=a
+    while True:
+        s=0
+        while temp>0:
+            r=temp%10
+            s=s+r
+            temp=temp//10
+        if s<10:
+            return s
+        else:
+            temp=s
+            s=0
+            continue
+a=int(input())
+b=add(a)
+print(b)
+            
+            
